@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id "com.diffplug.gradle.spotless" version "3.14.0"
+}
+apply plugin: 'java'
+apply plugin: 'application'
+//apply plugin: 'checkstyle'
+
+mainClassName = "java.PIDTuner"
+
+group 'SmallKat'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/staging/' }
+
+}
+
+dependencies {
+    dependencies {
+        compile "com.neuronrobotics:SimplePacketComsJava-HID:0.1.0"
+    }
+}
+//checkstyle {
+//    toolVersion = "8.10"
+//    configFile = new File(rootDir, "checkstyle.xml")
+//}
+
+spotless {
+    format 'misc', {
+        target '**/*.gradle', '**/*.md', '**/.gitignore', '**/*.yml', '**/*.sh', '**/*.xml'
+        lineEndings 'UNIX'
+
+        trimTrailingWhitespace()
+        indentWithSpaces()
+        endWithNewline()
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.10'
+}
