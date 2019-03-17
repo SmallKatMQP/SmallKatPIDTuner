@@ -44,6 +44,9 @@
             <TextField fx:id="COR" layoutX="1071.0" layoutY="672.0" />
             <Label layoutX="914.0" layoutY="634.0" text="Gravity" />
             <Label layoutX="1139.0" layoutY="634.0" text="Coriolis" />
+            <TextField fx:id="Position" layoutX="652.0" layoutY="520.0" />
+            <Label layoutX="721.0" layoutY="496.0" text="Position" />
+            <Button fx:id="UpdatePos" layoutX="700.0" layoutY="554.0" mnemonicParsing="false" onMouseClicked="#setPos" text="Set Position" />
          </children></AnchorPane>
    </children>
 </GridPane>

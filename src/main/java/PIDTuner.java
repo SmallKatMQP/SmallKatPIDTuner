@@ -10,16 +10,14 @@ import javafx.stage.Stage;
 import edu.wpi.SimplePacketComs.*;
 
 import java.awt.*;
-
 public class PIDTuner extends Application  {
     private static HIDSimplePacketComs MotherBoard;
-    private static PacketType kp = new edu.wpi.SimplePacketComs.BytePacketType(1963, 64);
-    private static PacketType ki = new edu.wpi.SimplePacketComs.BytePacketType(1964, 64);
-    private static PacketType kd = new edu.wpi.SimplePacketComs.BytePacketType(1965, 64);
-    private static PacketType grav = new edu.wpi.SimplePacketComs.BytePacketType(1966, 64);
-    private static PacketType cor = new edu.wpi.SimplePacketComs.BytePacketType(1967, 64);
-    private static final byte[] data = new byte[64];
-    private static final byte[] dataUp = new byte[64];
+    private static UpdateData kp = new UpdateData(0x3742,0x5751, 1943);
+    private static UpdateData ki = new UpdateData(0x3742,0x5751, 1944);
+    private static UpdateData kd = new UpdateData(0x3742,0x5751, 1945);
+    private static UpdateData grav = new UpdateData(0x3742,0x5751, 1946);
+    private static UpdateData cor = new UpdateData(0x3742,0x5751, 1947);
+
 
     @FXML
     Button UpdateKP;
@@ -31,6 +29,8 @@ public class PIDTuner extends Application  {
     Button UpdateGrav;
     @FXML
     Button UpdateCor;
+    @FXML
+    Button UpdatePos;
 
     @FXML
     ToggleButton ShoulderPanBtn;
@@ -59,58 +59,17 @@ public class PIDTuner extends Application  {
     javafx.scene.control.TextField GRAV;
     @FXML
     javafx.scene.control.TextField COR;
+    @FXML
+    javafx.scene.control.TextField Position;
 
 
 
     public static void main(String[] args)throws InterruptedException  {
+
+        //Configure DownStreamSending
+
         MotherBoard = new HIDSimplePacketComs(0x3742,0x5751);
         MotherBoard.connect();
-        MotherBoard.addPollingPacket(kp);
-        MotherBoard.addPollingPacket(ki);
-        MotherBoard.addPollingPacket(kd);
-        MotherBoard.addPollingPacket(grav);
-        MotherBoard.addPollingPacket(cor);
-        kp.waitToSendMode();
-        ki.waitToSendMode();
-        kd.waitToSendMode();
-        grav.waitToSendMode();
-        cor.waitToSendMode();
-
-        MotherBoard.addEvent(kp.idOfCommand, new Runnable() {
-            @Override
-            public void run() {
-                MotherBoard.readBytes(kp.idOfCommand, data);
-                MotherBoard.writeBytes(kp.idOfCommand, dataUp);
-            }
-        });
-        MotherBoard.addEvent(ki.idOfCommand, new Runnable() {
-            @Override
-            public void run() {
-                MotherBoard.readBytes(ki.idOfCommand, data);
-                MotherBoard.writeBytes(ki.idOfCommand, dataUp);
-            }
-        });
-        MotherBoard.addEvent(kd.idOfCommand, new Runnable() {
-            @Override
-            public void run() {
-                MotherBoard.readBytes(kd.idOfCommand, data);
-                MotherBoard.writeBytes(kd.idOfCommand, dataUp);
-            }
-        });
-        MotherBoard.addEvent(grav.idOfCommand, new Runnable() {
-            @Override
-            public void run() {
-                MotherBoard.readBytes(grav.idOfCommand, data);
-                MotherBoard.writeBytes(grav.idOfCommand, dataUp);
-            }
-        });
-        MotherBoard.addEvent(cor.idOfCommand, new Runnable() {
-            @Override
-            public void run() {
-                MotherBoard.readBytes(cor.idOfCommand, data);
-                MotherBoard.writeBytes(cor.idOfCommand, dataUp);
-            }
-        });
 
 
         launch(args);
@@ -124,37 +83,69 @@ public class PIDTuner extends Application  {
         primaryStage.show();
     }
 
+
+    //This is where all the values get set downstream
     public void SetKP(){
-        float data = 0;
-        data = (float)(Integer.parseInt(KP.getCharacters().toString())/100);
-        System.out.println(data);
+        int data = 0;
+        data = (int)(Float.parseFloat(KP.getCharacters().toString())*100);
+        int index = getIndex();
+        System.out.println(data+","+index);
+        numToBytes(data);
+
         //Send Downstream Here
     }
     public void SetKI(){
-        float data = 0;
-        data = (float)(Integer.parseInt(KI.getCharacters().toString())/100);
+        int data = 0;
+        data = (int)(Float.parseFloat(KI.getCharacters().toString())*100);
+        int index = getIndex();
+        System.out.println(data+","+index);
+        numToBytes(data);
 
         //Send Downstream Here
 
     }
     public void SetKD(){
-        float data = 0;
-        data = (float)(Integer.parseInt(KD.getCharacters().toString())/100);
+        int data = 0;
+        data = (int)(Float.parseFloat(KD.getCharacters().toString())*100);
+        int index = getIndex();
+        System.out.println(data+","+index);
+        numToBytes(data);
+
         //Send Downstream Here
 
     }
     public void SetGrav(){
-        float data = 0;
-        data = (float)(Integer.parseInt(GRAV.getCharacters().toString())/1000);
+        int data = 0;
+        data = (int)(Float.parseFloat(GRAV.getCharacters().toString())*1000);
+        int index = getIndex();
+        System.out.println(data+","+index);
+        numToBytes(data);
+
         //Send Downstream Here
 
     }
     public void SetCor(){
-        float data = 0;
-        data = (float)(Integer.parseInt(COR.getCharacters().toString())/1000);
+        int data = 0;
+        data = (int)(Float.parseFloat(COR.getCharacters().toString())*1000);
+        int index = getIndex();
+        System.out.println(data+","+index);
+        numToBytes(data);
+
         //Send Downstream Here
 
     }
+    public void setPos(){
+        int data = 0;
+        data = (int)(Float.parseFloat(Position.getCharacters().toString()));
+        int index = getIndex();
+        System.out.println(data+","+index);
+        numToBytes(data);
+
+
+    }
+
+
+    //Button State checing for overlap
     public void SPCheck(){
         if(ShoulderTiltBtn.isSelected()){
             ShoulderTiltBtn.setSelected(false);
@@ -288,5 +279,12 @@ public class PIDTuner extends Application  {
     }
     public int getIndex(){
         return(getLegBtnsState()+getJointBtnsState());
+    }
+
+    public byte[] numToBytes(int Data){
+        byte[] shiftedData = new byte[2];
+        shiftedData[0] = (byte)(Data>>8);
+        shiftedData[1] = (byte)(Data);
+        return shiftedData;
     }
 }
