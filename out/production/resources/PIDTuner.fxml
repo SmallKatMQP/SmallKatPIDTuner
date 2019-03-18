@@ -25,14 +25,14 @@
             <Label layoutX="307.0" layoutY="634.0" text="Kp" />
             <Label layoutX="483.0" layoutY="634.0" text="Ki" />
             <Label layoutX="680.0" layoutY="634.0" text="Kd" />
-            <TextField fx:id="KP" layoutX="234.0" layoutY="672.0" />
-            <TextField fx:id="KI" layoutX="416.0" layoutY="672.0" />
-            <TextField fx:id="KD" layoutX="613.0" layoutY="672.0" />
+            <TextField fx:id="KP" layoutX="234.0" layoutY="672.0" text="0" />
+            <TextField fx:id="KI" layoutX="416.0" layoutY="672.0" text="0" />
+            <TextField fx:id="KD" layoutX="613.0" layoutY="672.0" text="0" />
             <ToggleButton fx:id="ShoulderPanBtn" layoutX="688.0" layoutY="284.0" mnemonicParsing="false" onMouseClicked="#SPCheck" text="Shoulder Pan" />
             <ToggleButton fx:id="ShoulderTiltBtn" layoutX="688.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#STCheck" text="Shoulder Tilt" />
             <ToggleButton fx:id="ElbowBtn" layoutX="709.0" layoutY="368.0" mnemonicParsing="false" onMouseClicked="#ElbowCheck" text="Elbow" />
-            <ToggleButton fx:id="AnkleBtn" layoutX="710.0" layoutY="407.0" mnemonicParsing="false" onMouseClicked="#AnkleCheck" text="Ankle" />
-            <ToggleButton fx:id="FR" layoutX="494.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#FRCheck" text="Front Right" />
+            <ToggleButton fx:id="AnkleBtn" layoutX="710.0" layoutY="407.0" mnemonicParsing="false" onMouseClicked="#AnkleCheck" selected="true" text="Ankle" />
+            <ToggleButton fx:id="FR" layoutX="494.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#FRCheck" selected="true" text="Front Right" />
             <ToggleButton fx:id="FL" layoutX="629.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#FLCheck" text="Front Left" />
             <ToggleButton fx:id="BR" layoutX="752.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#BRCheck" text="Back Right" />
             <ToggleButton fx:id="BL" layoutX="884.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#BLCheck" text="Bask Left" />
@@ -40,11 +40,11 @@
             <Label layoutX="723.0" layoutY="254.0" text="Joint" />
             <Button fx:id="UpdateGrav" layoutX="893.0" layoutY="780.0" mnemonicParsing="false" onMouseClicked="#SetGrav" text="Set Gravity" />
             <Button fx:id="UpdateCor" layoutX="1117.0" layoutY="780.0" mnemonicParsing="false" onMouseClicked="#SetCor" text="Set Coriolis" />
-            <TextField fx:id="GRAV" layoutX="853.0" layoutY="672.0" />
-            <TextField fx:id="COR" layoutX="1071.0" layoutY="672.0" />
+            <TextField fx:id="GRAV" layoutX="853.0" layoutY="672.0" text="0" />
+            <TextField fx:id="COR" layoutX="1071.0" layoutY="672.0" text="0" />
             <Label layoutX="914.0" layoutY="634.0" text="Gravity" />
             <Label layoutX="1139.0" layoutY="634.0" text="Coriolis" />
-            <TextField fx:id="Position" layoutX="652.0" layoutY="520.0" />
+            <TextField fx:id="Position" layoutX="652.0" layoutY="520.0" text="0" />
             <Label layoutX="721.0" layoutY="496.0" text="Position" />
             <Button fx:id="UpdatePos" layoutX="700.0" layoutY="554.0" mnemonicParsing="false" onMouseClicked="#setPos" text="Set Position" />
          </children></AnchorPane>

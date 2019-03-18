@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b0d81d1-6bcc-4a3e-a8d4-295e757d5859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/UpdateData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/PIDTuner$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/PIDTuner$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/PIDTuner$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/PIDTuner$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/PIDTuner$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/PIDTuner$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/PIDTuner$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/PIDTuner$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/PIDTuner$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/PIDTuner$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/PIDTuner$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/PIDTuner$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/PIDTuner$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/PIDTuner$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/PIDTuner$5.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/PIDTuner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/PIDTuner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/PIDTuner.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/PIDTuner.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PIDTuner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PIDTuner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UpdateData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UpdateData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/PIDTuner.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PIDTuner.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -79,18 +79,18 @@
     <session id="667421405">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="fxml" value="5" />
+          <entry key="fxml" value="7" />
           <entry key="gradle" value="1" />
           <entry key="java" value="7" />
         </counts>
@@ -100,23 +100,23 @@
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="1" />
           <entry key="JAVA" value="7" />
-          <entry key="XML" value="5" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="21" />
-          <entry key="fxml" value="167" />
+          <entry key="fxml" value="168" />
           <entry key="gradle" value="30" />
-          <entry key="java" value="1474" />
+          <entry key="java" value="1942" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="30" />
-          <entry key="JAVA" value="1474" />
+          <entry key="JAVA" value="1942" />
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="XML" value="167" />
+          <entry key="XML" value="168" />
         </counts>
       </usages-collector>
     </session>
@@ -126,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PIDTuner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="71" column="30" lean-forward="true" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+            <state relative-caret-position="2088">
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,17 +135,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/UpdateData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="684">
+              <caret line="40" column="31" selection-start-line="35" selection-start-column="10" selection-end-line="40" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#817#818#0" expanded="true" />
-                <element signature="e#844#845#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,10 +159,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.neuronrobotics/SimplePacketComsJava-HID/0.1.0/e6159cb8647ff3d18153189382b1bb4dae910665/SimplePacketComsJava-HID-0.1.0-sources.jar!/edu/wpi/SimplePacketComs/phy/HIDSimplePacketComs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="1116">
+              <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/PIDTuner.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="33" column="144" selection-start-line="33" selection-start-column="144" selection-end-line="33" selection-end-column="144" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -174,16 +180,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
               <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/PIDTuner.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="46" column="38" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -595,11 +591,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/PIDTuner.fxml" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/resources/PIDTuner.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/KP.java" />
         <option value="$PROJECT_DIR$/src/main/java/Kp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PIDTuner.java" />
         <option value="$PROJECT_DIR$/src/main/java/UpdateData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PIDTuner.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/PIDTuner.fxml" />
       </list>
     </option>
   </component>
@@ -609,8 +605,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1636" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="73" />
     <option name="y" value="-5" />
     <option name="width" value="1564" />
     <option name="height" value="1805" />
@@ -621,7 +617,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -659,12 +654,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552865372126" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552874215299" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -753,18 +749,19 @@
       <workItem from="1552617661816" duration="810000" />
       <workItem from="1552618508756" duration="14552000" />
       <workItem from="1552783136171" duration="452000" />
-      <workItem from="1552857521464" duration="3757000" />
+      <workItem from="1552857521464" duration="7887000" />
+      <workItem from="1552874366937" duration="42000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19571000" />
+    <option name="totallyTimeSpent" value="23743000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="-5" width="3127" height="1805" extended-state="6" />
+    <frame x="72" y="-8" width="3129" height="1809" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07224211" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07256752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -772,9 +769,9 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.323049" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32757556" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39975324" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294263" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3212341" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39927405" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -803,34 +800,39 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PIDTuner.java</url>
+          <line>126</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/main.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.neuronrobotics/SimplePacketComsJava-HID/0.1.0/e6159cb8647ff3d18153189382b1bb4dae910665/SimplePacketComsJava-HID-0.1.0-sources.jar!/edu/wpi/SimplePacketComs/phy/HIDSimplePacketComs.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/KP.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Kp.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/PIDTuner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="2088">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/UpdateData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/PIDTuner.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" column="38" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="15" />
+        <state relative-caret-position="684">
+          <caret line="40" column="31" selection-start-line="35" selection-start-column="10" selection-end-line="40" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -841,32 +843,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Kp.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PIDTuner.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.neuronrobotics/SimplePacketComsJava-HID/0.1.0/e6159cb8647ff3d18153189382b1bb4dae910665/SimplePacketComsJava-HID-0.1.0-sources.jar!/edu/wpi/SimplePacketComs/phy/HIDSimplePacketComs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/PIDTuner.fxml">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="594">
-          <caret line="71" column="30" lean-forward="true" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="33" column="144" selection-start-line="33" selection-start-column="144" selection-end-line="33" selection-end-column="144" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UpdateData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="gradleExecuteTaskHistory">

@@ -11,12 +11,7 @@ import edu.wpi.SimplePacketComs.*;
 
 import java.awt.*;
 public class PIDTuner extends Application  {
-    private static HIDSimplePacketComs MotherBoard;
-    private static UpdateData kp = new UpdateData(0x3742,0x5751, 1943);
-    private static UpdateData ki = new UpdateData(0x3742,0x5751, 1944);
-    private static UpdateData kd = new UpdateData(0x3742,0x5751, 1945);
-    private static UpdateData grav = new UpdateData(0x3742,0x5751, 1946);
-    private static UpdateData cor = new UpdateData(0x3742,0x5751, 1947);
+    private static UpdateData Motherboard;
 
 
     @FXML
@@ -68,9 +63,8 @@ public class PIDTuner extends Application  {
 
         //Configure DownStreamSending
 
-        MotherBoard = new HIDSimplePacketComs(0x3742,0x5751);
-        MotherBoard.connect();
-
+        Motherboard = new UpdateData(0x3742,0x5751);
+        Motherboard.connect();
 
         launch(args);
     }
@@ -87,60 +81,87 @@ public class PIDTuner extends Application  {
     //This is where all the values get set downstream
     public void SetKP(){
         int data = 0;
+        int Type = 0;
         data = (int)(Float.parseFloat(KP.getCharacters().toString())*100);
         int index = getIndex();
         System.out.println(data+","+index);
-        numToBytes(data);
+        byte[] DownStream = numToBytes(data);
+        Motherboard.getData(Type)[index*2] = DownStream[0];
+        Motherboard.getData(Type)[(index*2)+1] = DownStream[1];
 
         //Send Downstream Here
     }
     public void SetKI(){
         int data = 0;
+        int Type = 1;
         data = (int)(Float.parseFloat(KI.getCharacters().toString())*100);
         int index = getIndex();
         System.out.println(data+","+index);
         numToBytes(data);
 
+        byte[] DownStream = numToBytes(data);
+        Motherboard.getData(Type)[index*2] = DownStream[0];
+        Motherboard.getData(Type)[(index*2)+1] = DownStream[1];
         //Send Downstream Here
 
     }
     public void SetKD(){
         int data = 0;
+        int Type = 2;
+
         data = (int)(Float.parseFloat(KD.getCharacters().toString())*100);
         int index = getIndex();
         System.out.println(data+","+index);
         numToBytes(data);
 
+        byte[] DownStream = numToBytes(data);
+        Motherboard.getData(Type)[index*2] = DownStream[0];
+        Motherboard.getData(Type)[(index*2)+1] = DownStream[1];
         //Send Downstream Here
 
     }
     public void SetGrav(){
         int data = 0;
+        int Type = 3;
+
         data = (int)(Float.parseFloat(GRAV.getCharacters().toString())*1000);
+
         int index = getIndex();
         System.out.println(data+","+index);
         numToBytes(data);
 
+        byte[] DownStream = numToBytes(data);
+        Motherboard.getData(Type)[index*2] = DownStream[0];
+        Motherboard.getData(Type)[(index*2)+1] = DownStream[1];
         //Send Downstream Here
 
     }
     public void SetCor(){
         int data = 0;
+        int Type = 4;
+
         data = (int)(Float.parseFloat(COR.getCharacters().toString())*1000);
         int index = getIndex();
         System.out.println(data+","+index);
         numToBytes(data);
 
+        byte[] DownStream = numToBytes(data);
+        Motherboard.getData(Type)[index*2] = DownStream[0];
+        Motherboard.getData(Type)[(index*2)+1] = DownStream[1];
         //Send Downstream Here
 
     }
     public void setPos(){
         int data = 0;
+        int Type = 5;
+
         data = (int)(Float.parseFloat(Position.getCharacters().toString()));
         int index = getIndex();
         System.out.println(data+","+index);
         numToBytes(data);
-
+        byte[] DownStream = numToBytes(data);
+        Motherboard.getData(Type)[index*2] = DownStream[0];
+        Motherboard.getData(Type)[(index*2)+1] = DownStream[1];
 
     }
 
